@@ -1,24 +1,31 @@
 body {
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('/assets/backgrounds/bluegrid.png');
-}
-
-.window {
-    border: 1px solid black;
-}
-
-.titlebar {
-    border-bottom: 1px solid black;
-    background-color: #85a3cb;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.windowcontent {
+    width: 500px;
     text-align: center;
-    background-color: white;
-    font-size: 30px;
-    padding: 10px;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'top top top top'
+        'nav main main main'
+    ;
+}
+
+.g1 {
+    grid-area: top;
+}
+
+.g2 {
+    grid-area: nav;
+    width: 150px;
+}
+
+.g3 {
+    grid-area: main;
 }
