@@ -1,0 +1,24 @@
+body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/backgrounds/bluegrid.png');
+}
+
+.window {
+    border: 1px solid black;
+}
+
+.titlebar {
+    border-bottom: 1px solid black;
+    background-color: #85a3cb;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.windowcontent {
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+}
