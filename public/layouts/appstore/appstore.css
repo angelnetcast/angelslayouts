@@ -1,0 +1,66 @@
+:root {
+    --white: #edededff;
+    --blue: #6b81cbff;
+  }
+
+body {
+    background-color: var(--white);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'back back back back'
+        'icon title title title'
+        'links links links links'
+        'infoL infoL infoR infoR'
+        'xinfo xinfo xinfo xinfo'
+        'images images images images'
+        'more more more more'
+        'more2 more2 more2 more2'
+    ;
+}
+
+.grid-container>div {
+    border: 1px solid black;
+}
+
+.g1 {
+    grid-area: back;
+}
+
+.g2{
+    grid-area: icon;
+}
+
+.g3{
+    grid-area: title;
+}
+
+.g4{
+    grid-area: links;
+}
+
+.g5{
+    grid-area: infoL;
+}
+
+.g6{
+    grid-area: infoR;
+}
+
+.g7{
+    grid-area: xinfo;
+}
+
+.g8{
+    grid-area: images;
+}
+
+.g9{
+    grid-area: more;
+}
+
+.g10{
+    grid-area: more2;
+}
