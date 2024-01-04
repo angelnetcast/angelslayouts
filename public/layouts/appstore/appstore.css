@@ -13,7 +13,6 @@ body {
     background-color: var(--white);
     font-family: poppins;
     width: 800px;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
 }
