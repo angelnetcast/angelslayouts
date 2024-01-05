@@ -1,6 +1,8 @@
 body {
     width: 500px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .box {
@@ -14,6 +16,7 @@ body {
     grid-template-areas:
         'top top top top'
         'nav main main main'
+        'footer footer footer footer'
     ;
 }
 
@@ -28,4 +31,8 @@ body {
 
 .g3 {
     grid-area: main;
+}
+
+.g4{
+    grid-area: footer;
 }
