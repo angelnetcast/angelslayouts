@@ -1,0 +1,15 @@
+@font-face {
+    font-family: nds;
+    src: url(/assets/Nintendo-DS-BIOS.ttf);
+}
+
+body {
+    text-align: center;
+    font-family: nds;
+    font-size: 20px;
+}
+
+a{
+    color: black;
+    font-style: italic;
+}
