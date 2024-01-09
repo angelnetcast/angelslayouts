@@ -1,0 +1,108 @@
+html,
+body {
+    background-color: #121212;
+    font-family: MS gothic;
+    color: #ffffff;
+}
+
+/* grid layout */
+/* quick select */
+.grid-quickselect {
+    display: grid;
+    grid-template-areas:
+        "one two three"
+        "four five six";
+}
+
+.qsg1 {
+    grid-area: one;
+}
+
+.qsg2 {
+    grid-area: two;
+}
+
+.qsg3 {
+    grid-area: three;
+}
+
+.qsg4 {
+    grid-area: four;
+}
+
+.qsg5 {
+    grid-area: five;
+}
+
+.qsg6 {
+    grid-area: six;
+}
+
+/* mix playlist */
+.grid-mixes {
+    display: grid;
+    grid-template-areas: "one two three four five";
+}
+
+/* container styling */
+/* quick select */
+.container {
+    padding: 50px;
+}
+
+.quickplaylist {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.quickitem {
+    background-color: #181818;
+    width: 500px;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.quickitem>img {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.quickitem>.title {
+    display: inline-block;
+    position: absolute;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 37px;
+}
+
+/* daily mixes */
+
+.mixplaylist {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.mixitem {
+    background-color: #181818;
+    text-align: center;
+    width: 230px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.mixitem>img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mixitem>.title {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+/* others */
+.heading {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
