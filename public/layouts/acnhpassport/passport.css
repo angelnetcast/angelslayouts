@@ -1,4 +1,19 @@
 /* MAIN */
+:root {
+    --gray: #adac8f;
+    --green: #6fbe65;
+    --skyblue: #858fde;
+    --red: #f49387;
+    --yellowgreen: #b2cf3d;
+    --lavender: #ac99e4;
+    --teal: #7dc49c;
+    --dandelion: #d5a81d;
+    --cyan: #6abace;
+    --brickred: #e38570;
+    --pink: #cb82d0;
+    --ocean: #6aaac7;
+}
+
 @font-face {
     font-family: dialogue;
     src: url(/layouts/acnhpassport/FOT-RodinBokutoh\ Pro\ EB.otf);
