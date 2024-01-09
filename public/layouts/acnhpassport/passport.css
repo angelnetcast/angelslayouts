@@ -1,0 +1,84 @@
+/* MAIN */
+@font-face {
+    font-family: dialogue;
+    src: url(/layouts/acnhpassport/FOT-RodinBokutoh\ Pro\ EB.otf);
+}
+
+@font-face {
+    font-family: system;
+    src: url(/layouts/acnhpassport/FOT-Seurat\ Pro\ B.otf);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    font-family: system;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'title title title title'
+        'photo content content content'
+        'footer footer footer footer';
+}
+
+.grid-container>div {
+    border: 1px solid black;
+
+}
+
+.g1 {
+    grid-area: title;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.g2 {
+    grid-area: photo;
+    text-align: center;
+    padding: 20px;
+}
+
+.g3 {
+    grid-area: content;
+    padding: 20px;
+}
+
+.g4 {
+    grid-area: footer;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* DESIGN */
+
+/* passport photo */
+#photo {
+    border-radius: 10%;
+    margin-top: 10px;
+}
+
+#photoborder {
+    border-radius: 10%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* EXTRA */
+.icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.speech {
+    width: 100px; /* make the width longer to accomodate bigger text */
+    background: red;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
