@@ -4,6 +4,8 @@
     --background: #b3ad95;
     --foreground: #faf8df;
     --bottomshadow: #e5dac6;
+    --maintxt: #533e0f;
+    --alttxt: #9c8d70;
 
     /* 
     COLOR NOTE
@@ -91,7 +93,7 @@ body {
 .g3 {
     grid-area: content;
     padding: 20px;
-    background-color: var(--dandelion);
+    background-color: var(--cyan);
 }
 
 .g4 {
@@ -124,7 +126,7 @@ body {
 .speech {
     width: 100px;
     /* make the width longer to accomodate bigger text */
-    background: red;
+    background: var(--foreground);
     padding: 10px;
     text-align: center;
     position: relative;
@@ -134,4 +136,12 @@ hr{
     height:3px;
     border-width:0px;
     background-color: var(--foreground);
+}
+
+.maintxt{
+    color: var(--maintxt);
+}
+
+.alttxt{
+    color: var(--alttxt);
 }
