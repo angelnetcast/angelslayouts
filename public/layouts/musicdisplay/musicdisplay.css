@@ -1,0 +1,45 @@
+:root {
+
+    --main: #bb5fff;
+    --background: black;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--main)
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'profile info links'
+        'footer footer footer'
+    ;
+}
+
+.grid-container>div {
+    border: 1px solid var(--main);
+    margin: 5px;
+    text-align: center;
+}
+
+.g1 {
+    grid-area: header;
+}
+
+.g2 {
+    grid-area: profile;
+}
+
+.g3 {
+    grid-area: info;
+}
+
+.g4 {
+    grid-area: links;
+}
+
+.g5 {
+    grid-area: footer;
+}
