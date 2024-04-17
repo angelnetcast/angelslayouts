@@ -1,0 +1,80 @@
+:root {
+    --white: #fff9ec;
+    --blue: #91bbff;
+    --yellow: #fce694;
+    --darkbrown: #472c1b;
+    --brown: #7d451b;
+}
+
+@font-face {
+    font-family: badcomic;
+    src: url(BadComic-Regular.ttf);
+}
+
+@font-face {
+    font-family: bouncy;
+    src: url(Bouncy-PERSONAL_USE_ONLY.otf);
+}
+
+body {
+    background-color: var(--white);
+    font-family: badcomic;
+}
+
+/* GRID */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'nav nav nav nav'
+        'webmaster about about about'
+        'webmaster updates updates updates'
+        'blog blog blog blog'
+        'footer footer footer footer'
+    ;
+}
+
+.g {
+    padding: 15px;
+    margin: 3px;
+    border: 1px dashed black;
+}
+
+.g1 {
+    grid-area: header;
+}
+
+.g2 {
+    grid-area: nav;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.g3 {
+    grid-area: webmaster;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.g4 {
+    grid-area: about;
+}
+
+.g5 {
+    grid-area: updates;
+    margin-bottom: 10px;
+}
+
+.g6 {
+    grid-area: blog;
+}
+
+.g7 {
+    grid-area: footer;
+}
+
+/* DESIGN */
+.heading{
+    font-family: bouncy;
+    font-size: 50px;
+}
