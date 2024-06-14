@@ -1,0 +1,174 @@
+/* btuh i'm gonna have 2 comment this soooo much what the hell am i doing to keep these in line -_-*/
+:root {
+  --white: white;
+  --skyblue: rgb(223, 247, 255);
+  --lightpink: rgb(255, 229, 252);
+  --red: red;
+  --yellow: yellow;
+  --purplelogo: #941f9b;
+  --pinklogo: #ff7cb5;
+}
+
+@font-face {
+  font-family: magazine;
+  src: url(Magazine.ttf);
+}
+
+@font-face {
+  font-family: hellosamosa;
+  src: url(HelloSamosa.otf);
+}
+
+@font-face {
+  font-family: abalonesmile;
+  src: url(AbaloneSmile.otf);
+}
+
+body {
+  font-family: abalonesmile;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, var(--skyblue) 70%, var(--lightpink) 100%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "topdeco topdeco topdeco topdeco"
+    "main main main nav"
+    "footer footer footer footer";
+}
+.grid {
+  border: 5px dashed var(--pinklogo);
+  background-color: var(--white);
+  padding: 20px;
+}
+
+.g1 {
+  grid-area: title;
+  text-align: center;
+  margin: 150px;
+  margin-bottom: 300px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.g2 {
+  grid-area: topdeco;
+  text-align: center;
+  font-size:0px;
+}
+
+.g3 {
+  grid-area: nav;
+  margin-right: 200px;
+  margin-left: 15px;
+}
+
+.g4 {
+  grid-area: main;
+  margin-left: 200px;
+}
+
+.g5{
+  grid-area: footer;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 15px;
+}
+
+/* -------------- links -------------- */
+a:link {
+  color: var(--pinklogo);
+}
+
+a:visited {
+  color: var(--purplelogo);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+ul{
+  list-style-image: url("assets/bullet.gif");
+}
+
+/* -------------- emphasis -------------- */
+mark {
+  background-color: #d6cef6;
+}
+
+b {
+  color: #3810D1;
+}
+
+/* spinning kero gif stuff :p*/
+.header {
+  font-family: magazine;
+  font-size: 50px;
+  color: var(--red);
+  text-shadow: var(--yellow) 2px 0px;
+}
+
+.bar{
+  background-color: var(--red);
+  box-shadow: var(--yellow) 2px 2px;
+  border-radius: 5px;
+  text-align: left;
+  margin-left:0;
+  width: 500px;
+  height: 10px
+}
+
+/* spinning kero gif stuff :p*/
+.deco {
+  width: 900px;
+}
+
+#kero {
+  z-index: -1;
+  position: absolute;
+  right: 600px;
+  top: 180px;
+}
+
+#planet {
+  z-index: -2;
+  position: absolute;
+  top: 270px;
+  right: 400px;
+  animation: spin 10s linear infinite;
+}
+
+#disc {
+  z-index: -1;
+  position: absolute;
+  bottom: -750px;
+  right: 30px;
+  animation: spin 10s linear infinite;
+}
+
+#flower{
+  z-index: 1;
+  position: absolute;
+  bottom: -840px;
+  right: 440px;
+}
+
+#fig1{
+  z-index: 1;
+  position: absolute;
+  bottom: -380px;
+  left: 120px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
