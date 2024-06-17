@@ -1,4 +1,28 @@
-/* btuh i'm gonna have 2 comment this soooo much what the hell am i doing to keep these in line -_-*/
+/* 
+                        _                      _                                _                         
+  ___   __ _  _ __   __| |  ___   __ _  _ __  | |_   ___   _ __     ___   __ _ | | __ _   _  _ __   __ _  
+ / __| / _` || '__| / _` | / __| / _` || '_ \ | __| / _ \ | '__|   / __| / _` || |/ /| | | || '__| / _` | 
+| (__ | (_| || |   | (_| || (__ | (_| || |_) || |_ | (_) || |      \__ \| (_| ||   < | |_| || |   | (_| | 
+ \___| \__,_||_|    \__,_| \___| \__,_|| .__/  \__| \___/ |_|      |___/ \__,_||_|\_\ \__,_||_|    \__,_| 
+                                       |_|                                                                
+
+helloooooo and welcome 2 the cardcaptor theme's html. thanks for downloading it! i'll be commenting this 
+code the best i can to split things up into easy-to-navigate sections. this code shoooould work out of the 
+box, but if it doesnt/you have any questions feel free 2 email me.
+
+this code is free to use! please credit me if you're asked where the code comes from, but otherwise go
+wild o7
+
+thanks for checking it out!
+made with love by angel
+
+---------- contact ----------
+email: angelnetcast at protonmail dot com
+main site: https://angelscake.neocities.org/
+layout site: https://angelslayouts.neocities.org/
+*/
+
+/* ------------------------ COLOR VARIABLES AND FONTS ------------------------ */
 :root {
   --white: white;
   --skyblue: rgb(223, 247, 255);
@@ -15,70 +39,26 @@
 }
 
 @font-face {
-  font-family: hellosamosa;
-  src: url(HelloSamosa.otf);
-}
-
-@font-face {
   font-family: abalonesmile;
   src: url(AbaloneSmile.otf);
 }
 
-body {
-  font-family: abalonesmile;
-  margin-left: auto;
-  margin-right: auto;
+/* ------------------------ HTML AND BODY DESIGN ------------------------ */
+html {
   background-image: linear-gradient(to bottom, var(--skyblue) 70%, var(--lightpink) 100%);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "title title title title"
-    "topdeco topdeco topdeco topdeco"
-    "main main main nav"
-    "footer footer footer footer";
-}
-.grid {
-  border: 5px dashed var(--pinklogo);
-  background-color: var(--white);
-  padding: 20px;
+body {
+  width: 1536px; /*note: this is the size of my screen. feel free 2 edit to fit yours, though you'll likely have 2 move the graphics as well*/
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: abalonesmile;
+  margin-left: 0px; /*note: gets rid of the weird random left spacing??? idk :p sometimes i fix things w duct tape*/
 }
 
-.g1 {
-  grid-area: title;
-  text-align: center;
-  margin: 150px;
-  margin-bottom: 300px;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-.g2 {
-  grid-area: topdeco;
-  text-align: center;
-  font-size:0px;
-}
-
-.g3 {
-  grid-area: nav;
-  margin-right: 200px;
-  margin-left: 15px;
-}
-
-.g4 {
-  grid-area: main;
-  margin-left: 200px;
-}
-
-.g5{
-  grid-area: footer;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 15px;
-}
-
-/* -------------- links -------------- */
+/* --- link color attributes --- */
 a:link {
   color: var(--pinklogo);
 }
@@ -91,20 +71,80 @@ a:hover {
   color: var(--red);
 }
 
-ul{
+/* --- bullet point --- */
+ul {
   list-style-image: url("assets/bullet.gif");
 }
 
-/* -------------- emphasis -------------- */
+/* --- emphasis --- */
 mark {
-  background-color: #d6cef6;
+  color: var(--white);
+  background-color: var(--red);
 }
 
 b {
-  color: #3810D1;
+  color: var(--purplelogo);
 }
 
-/* spinning kero gif stuff :p*/
+i {
+  color: var(--pinklogo);
+}
+
+/* ------------------------ GRID LAYOUT ------------------------ */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "topdeco topdeco topdeco topdeco"
+    "main main main nav"
+    "footer footer footer footer";
+}
+.grid {
+  background-color: var(--white);
+  border: 5px dashed var(--pinklogo);
+  padding: 20px;
+}
+
+/* --- G1 // cardcaptor logo --- */
+.g1 {
+  grid-area: title;
+  text-align: center;
+  margin: 150px;
+  margin-bottom: 300px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* --- G2 // cloud divider --- */
+.g2 {
+  grid-area: topdeco;
+  text-align: center;
+  font-size: 0px; /*note: this is here to remove the weird gaps in the clouds*/
+}
+
+/* --- G3 // nav bar --- */
+.g3 {
+  grid-area: nav;
+  margin-right: 200px;
+  margin-left: 15px;
+}
+
+/* --- G4 // main content --- */
+.g4 {
+  grid-area: main;
+  margin-left: 200px;
+}
+
+/* --- G5 // footer --- */
+.g5 {
+  grid-area: footer;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 15px;
+}
+
+/* ------------------------ GRAPHIC DECORATIONS  ------------------------ */
+/* --- heading text --- */
 .header {
   font-family: magazine;
   font-size: 50px;
@@ -112,21 +152,17 @@ b {
   text-shadow: var(--yellow) 2px 0px;
 }
 
-.bar{
+/* --- horizontal bar --- */
+.bar {
   background-color: var(--red);
   box-shadow: var(--yellow) 2px 2px;
   border-radius: 5px;
-  text-align: left;
-  margin-left:0;
+  margin-left: 0; /*note: keeps the bar left aligned. remove this to have centered bars*/
   width: 500px;
-  height: 10px
+  height: 10px;
 }
 
-/* spinning kero gif stuff :p*/
-.deco {
-  width: 900px;
-}
-
+/* --- keroberos --- */
 #kero {
   z-index: -1;
   position: absolute;
@@ -142,28 +178,29 @@ b {
   animation: spin 10s linear infinite;
 }
 
+/* --- body decorations --- */
 #disc {
   z-index: -1;
   position: absolute;
-  bottom: -750px;
   right: 30px;
   animation: spin 10s linear infinite;
 }
 
-#flower{
+#flower {
   z-index: 1;
   position: absolute;
-  bottom: -840px;
+  top: 1350px;
   right: 440px;
 }
 
-#fig1{
+#fig1 {
   z-index: 1;
   position: absolute;
-  bottom: -380px;
+  top: 870px;
   left: 120px;
 }
 
+/* --- spin animation --- */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
