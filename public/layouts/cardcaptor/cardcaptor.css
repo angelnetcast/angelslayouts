@@ -46,6 +46,7 @@ layout site: https://angelslayouts.neocities.org/
 /* ------------------------ HTML AND BODY DESIGN ------------------------ */
 html {
   background-image: linear-gradient(to bottom, var(--skyblue) 70%, var(--lightpink) 100%);
+  cursor: url("assets/cursor.gif"), auto;
 }
 
 body {
@@ -69,6 +70,7 @@ a:visited {
 
 a:hover {
   color: var(--red);
+  cursor: url("assets/cursor.gif"), auto;
 }
 
 /* --- bullet point --- */
