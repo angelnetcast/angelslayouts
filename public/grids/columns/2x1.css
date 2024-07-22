@@ -1,0 +1,19 @@
+.box {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+  height: 500px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "col1 col2";
+}
+
+#g1 {
+  grid-area: col1;
+}
+
+#g2 {
+  grid-area: col2;
+}
