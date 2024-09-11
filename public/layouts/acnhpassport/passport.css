@@ -1,147 +1,139 @@
 /* MAIN */
 :root {
+  --background: #b3ad95;
+  --foreground: #faf8df;
+  --bottomshadow: #e5dac6;
+  --maintxt: #533e0f;
+  --alttxt: #9c8d70;
 
-    --background: #b3ad95;
-    --foreground: #faf8df;
-    --bottomshadow: #e5dac6;
-    --maintxt: #533e0f;
-    --alttxt: #9c8d70;
-
-    /* 
+  /* 
     COLOR NOTE
     -------------
     all of the colors below are associated with a star sign in-game.
-    each sign is listed below it's associated color variable below 
-    (my formatter made it like that ^^") feel free to match your theme 
-    along with that, or switch it up to your liking!
+    each sign is listed next to its associated color variable. feel 
+    free to copy how it is in the game or use whatever color you want!
     */
-    --gray: #adac8f;
-    /* aries */
-    --green: #6fbe65;
-    /* taurus */
-    --skyblue: #858fde;
-    /* gemini */
-    --red: #f49387;
-    /* cancer */
-    --yellowgreen: #b2cf3d;
-    /* leo */
-    --lavender: #ac99e4;
-    /* virgo */
-    --teal: #7dc49c;
-    /* libra */
-    --dandelion: #d5a81d;
-    /* scorpio */
-    --cyan: #6abace;
-    /* sagittarius */
-    --brickred: #e38570;
-    /* capricorn */
-    --pink: #cb82d0;
-    /* aquarius */
-    --ocean: #6aaac7;
-    /* pisces */
+  --gray: #adac8f; /* aries */
+  --green: #6fbe65; /* taurus */
+  --skyblue: #858fde; /* gemini */
+  --red: #f49387; /* cancer */
+  --yellowgreen: #b2cf3d; /* leo */
+  --lavender: #ac99e4; /* virgo */
+  --teal: #7dc49c; /* libra */
+  --dandelion: #d5a81d; /* scorpio */
+  --cyan: #6abace; /* sagittarius */
+  --brickred: #e38570; /* capricorn */
+  --pink: #cb82d0; /* aquarius */
+  --ocean: #6aaac7; /* pisces */
 }
 
 @font-face {
-    font-family: dialogue;
-    src: url(/layouts/acnhpassport/FOT-RodinBokutoh\ Pro\ EB.otf);
+  font-family: dialogue;
+  src: url(/layouts/acnhpassport/FOT-RodinBokutoh\ Pro\ EB.otf);
 }
 
 @font-face {
-    font-family: system;
-    src: url(/layouts/acnhpassport/FOT-Seurat\ Pro\ B.otf);
+  font-family: system;
+  src: url(/layouts/acnhpassport/FOT-Seurat\ Pro\ B.otf);
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    font-family: system;
-    background-color: var(--background);
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  font-family: system;
+  background-color: var(--background);
 }
 
 /* GRID */
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        'title title title title'
-        'photo content content content'
-        'footer footer footer footer';
-    background-color: var(--foreground);
-    border-radius: 25px;
+  display: grid;
+  grid-template-areas:
+    "title title title title"
+    "photo content content content"
+    "footer footer footer footer";
+  background-color: var(--foreground);
+  border-radius: 25px;
 }
 
-.grid-container>div {
-    border: 1px  black;
-
+.grid-container > div {
+  border: 1px black;
 }
 
 .g1 {
-    grid-area: title;
-    text-align: center;
-    font-size: 12px;
-
+  grid-area: title;
+  text-align: center;
+  font-size: 12px;
 }
 
 .g2 {
-    grid-area: photo;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--dandelion);
-
+  grid-area: photo;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dandelion);
+  background-image: url("leafbg.png");
+  background-size: 50px;
 }
 
 .g3 {
-    grid-area: content;
-    padding: 20px;
-    background-color: var(--cyan);
+  grid-area: content;
+  padding: 20px;
+  background-color: var(--cyan);
+  background-image: url("leafbg.png");
+  background-size: 50px;
+}
+
+.g2, .g3 {
+  background-image: url("leafbg.png");
+  background-size: 50px;
 }
 
 .g4 {
-    grid-area: footer;
-    padding-top: 20px;
-    padding-left: 20px;
+  grid-area: footer;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 /* DESIGN */
 
 /* passport photo */
 #photo {
-    border-radius: 10%;
-    margin-top: 10px;
+  border-radius: 10%;
+  margin-top: 10px;
 }
 
 #photoborder {
-    border-radius: 10%;
-    background-color: var(--foreground);
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 10%;
+  background-color: var(--foreground);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* EXTRA */
 .icon {
-    width: 50px;
-    vertical-align: middle;
+  width: 50px;
+  vertical-align: middle;
 }
 
 .speech {
-    width: 100px;
-    /* make the width longer to accomodate bigger text */
-    background: var(--foreground);
-    padding: 10px;
-    text-align: center;
-    position: relative;
+  width: 100px;
+  /* make the width longer to accomodate bigger text */
+  background: var(--foreground);
+  padding: 10px;
+  text-align: center;
+  position: relative;
 }
 
-hr{
-    height:3px;
-    border-width:0px;
-    background-color: var(--foreground);
+hr {
+  height: 3px;
+  border-width: 0px;
+  background-color: var(--foreground);
 }
 
-.maintxt{
-    color: var(--maintxt);
+.maintxt {
+  color: var(--maintxt);
 }
 
-.alttxt{
-    color: var(--alttxt);
+.alttxt {
+  color: var(--alttxt);
 }
