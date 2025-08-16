@@ -1,55 +1,56 @@
-@font-face {
-    font-family: nds;
-    src: url(/assets/Nintendo-DS-BIOS.ttf);
-}
-
 body {
-    width: 500px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: nds;
-    font-size: 20px;
+	width: 800px;
+    font-family: helvetica;
 }
-
-a{
-    color: black;
-    font-style: italic;
-}
-
-.box {
-    border: 2px solid black;
-    padding: 5px;
-    margin: 5px
-}
-
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        'top top top top'
-        'nav main main main'
-        'footer footer footer footer'
-    ;
+	display: grid;
+	grid-template-areas:
+		"top top top top"
+		"nav main main main"
+		"footer footer footer footer";
 }
-
+.grid {
+	padding: 10px;
+	margin: 15px;
+}
 .g1 {
-    grid-area: top;
+	grid-area: top;
 }
 
 .g2 {
-    grid-area: nav;
-    width: 150px;
+	grid-area: nav;
 }
 
 .g3 {
-    grid-area: main;
+	grid-area: main;
 }
 
-.g4{
-    grid-area: footer;
+.g4 {
+	grid-area: footer;
 }
 
-#nav{
-    text-align: left;
+#header {
+	display: flex;
+	align-items: flex-end;
+	background-image: url(/assets/windowyui.jpg);
+	background-repeat: no-repeat;
+	height: 380px;
+	color: white;
+}
+#sitenav {
+	text-align: left;
 }
 
+#sidebar > ul {
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+}
+
+#footer {
+	text-align: right;
+}
+
+.layout{
+padding-left: 10px;    border-left: 1px solid black;
+}
