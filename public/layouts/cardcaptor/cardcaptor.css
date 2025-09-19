@@ -24,190 +24,190 @@ layout site: https://angelslayouts.neocities.org/
 
 /* ------------------------ COLOR VARIABLES AND FONTS ------------------------ */
 :root {
-  --white: white;
-  --skyblue: rgb(223, 247, 255);
-  --lightpink: rgb(255, 229, 252);
-  --red: red;
-  --yellow: yellow;
-  --purplelogo: #941f9b;
-  --pinklogo: #ff7cb5;
+	--white: white;
+	--skyblue: rgb(223, 247, 255);
+	--lightpink: rgb(255, 229, 252);
+	--red: red;
+	--yellow: yellow;
+	--purplelogo: #941f9b;
+	--pinklogo: #ff7cb5;
 }
 
 @font-face {
-  font-family: magazine;
-  src: url(Magazine.ttf);
+	font-family: magazine;
+	src: url(Magazine.ttf);
 }
 
 @font-face {
-  font-family: abalonesmile;
-  src: url(AbaloneSmile.otf);
+	font-family: abalonesmile;
+	src: url(AbaloneSmile.otf);
 }
 
 /* ------------------------ HTML AND BODY DESIGN ------------------------ */
 html {
-  background-image: linear-gradient(to bottom, var(--skyblue) 70%, var(--lightpink) 100%);
-  cursor: url("assets/cursor.gif"), auto;
+	background-image: linear-gradient(to bottom, var(--skyblue) 70%, var(--lightpink) 100%);
+	cursor: url("assets/cursor.gif"), auto;
 }
 
 body {
-  width: 1536px; /*note: this is the size of my screen. feel free 2 edit to fit yours, though you'll likely have 2 move the graphics as well*/
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: abalonesmile;
-  margin-left: 0px; /*note: gets rid of the weird random left spacing??? idk :p sometimes i fix things w duct tape*/
+	width: 1536px; /*note: this is the size of my screen. feel free 2 edit to fit yours, though you'll likely have 2 move the graphics as well*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: abalonesmile;
+	margin-left: 0px; /*note: gets rid of the weird random left spacing??? idk :p sometimes i fix things w duct tape*/
 }
 
 /* --- link color attributes --- */
 a:link {
-  color: var(--pinklogo);
+	color: var(--pinklogo);
 }
 
 a:visited {
-  color: var(--purplelogo);
+	color: var(--purplelogo);
 }
 
 a:hover {
-  color: var(--red);
-  cursor: url("assets/cursor.gif"), auto;
+	color: var(--red);
+	cursor: url("assets/cursor.gif"), auto;
 }
 
 /* --- bullet point --- */
 ul {
-  list-style-image: url("assets/bullet.gif");
+	list-style-image: url("assets/bullet.gif");
 }
 
 /* --- emphasis --- */
 mark {
-  color: var(--white);
-  background-color: var(--red);
+	color: var(--white);
+	background-color: var(--red);
 }
 
 b {
-  color: var(--purplelogo);
+	color: var(--purplelogo);
 }
 
 i {
-  color: var(--pinklogo);
+	color: var(--pinklogo);
 }
 
 /* ------------------------ GRID LAYOUT ------------------------ */
 .grid-container {
-  display: grid;
-  grid-template-areas:
-    "title title title title"
-    "topdeco topdeco topdeco topdeco"
-    "main main main nav"
-    "footer footer footer footer";
+	display: grid;
+	grid-template-areas:
+		"title title title title"
+		"topdeco topdeco topdeco topdeco"
+		"main main main nav"
+		"footer footer footer footer";
 }
 .grid {
-  background-color: var(--white);
-  border: 5px dashed var(--pinklogo);
-  padding: 20px;
+	background-color: var(--white);
+	border: 5px dashed var(--pinklogo);
+	padding: 20px;
 }
 
 /* --- G1 // cardcaptor logo --- */
 .g1 {
-  grid-area: title;
-  text-align: center;
-  margin: 150px;
-  margin-bottom: 300px;
-  margin-top: 10px;
-  padding: 10px;
+	grid-area: title;
+	text-align: center;
+	margin: 150px;
+	margin-bottom: 300px;
+	margin-top: 10px;
+	padding: 10px;
 }
 
 /* --- G2 // cloud divider --- */
 .g2 {
-  grid-area: topdeco;
-  text-align: center;
-  font-size: 0px; /*note: this is here to remove the weird gaps in the clouds*/
+	grid-area: topdeco;
+	text-align: center;
+	font-size: 0px; /*note: this is here to remove the weird gaps in the clouds*/
 }
 
 /* --- G3 // nav bar --- */
 .g3 {
-  grid-area: nav;
-  margin-right: 200px;
-  margin-left: 15px;
+	grid-area: nav;
+	margin-right: 200px;
+	margin-left: 15px;
 }
 
 /* --- G4 // main content --- */
 .g4 {
-  grid-area: main;
-  margin-left: 200px;
+	grid-area: main;
+	margin-left: 200px;
 }
 
 /* --- G5 // footer --- */
 .g5 {
-  grid-area: footer;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 15px;
+	grid-area: footer;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 15px;
 }
 
 /* ------------------------ GRAPHIC DECORATIONS  ------------------------ */
 /* --- heading text --- */
 .header {
-  font-family: magazine;
-  font-size: 50px;
-  color: var(--red);
-  text-shadow: var(--yellow) 2px 0px;
+	font-family: magazine;
+	font-size: 50px;
+	color: var(--red);
+	text-shadow: var(--yellow) 2px 0px;
 }
 
 /* --- horizontal bar --- */
 .bar {
-  background-color: var(--red);
-  box-shadow: var(--yellow) 2px 2px;
-  border-radius: 5px;
-  margin-left: 0; /*note: keeps the bar left aligned. remove this to have centered bars*/
-  width: 500px;
-  height: 10px;
+	background-color: var(--red);
+	box-shadow: var(--yellow) 2px 2px;
+	border-radius: 5px;
+	margin-left: 0; /*note: keeps the bar left aligned. remove this to have centered bars*/
+	width: 500px;
+	height: 10px;
 }
 
 /* --- keroberos --- */
 #kero {
-  z-index: -1;
-  position: absolute;
-  right: 600px;
-  top: 180px;
+	z-index: -1;
+	position: absolute;
+	right: 600px;
+	top: 180px;
 }
 
 #planet {
-  z-index: -2;
-  position: absolute;
-  top: 270px;
-  right: 400px;
-  animation: spin 10s linear infinite;
+	z-index: -2;
+	position: absolute;
+	top: 270px;
+	right: 400px;
+	animation: 10s spin linear infinite;
 }
 
 /* --- body decorations --- */
 #disc {
-  z-index: -1;
-  position: absolute;
-  right: 30px;
-  animation: spin 10s linear infinite;
+	z-index: -1;
+	position: absolute;
+	right: 30px;
+	animation: 10s spin linear infinite;
 }
 
 #flower {
-  z-index: 1;
-  position: absolute;
-  top: 1350px;
-  right: 440px;
+	z-index: 1;
+	position: absolute;
+	top: 1350px;
+	right: 440px;
 }
 
 #fig1 {
-  z-index: 1;
-  position: absolute;
-  top: 870px;
-  left: 120px;
+	z-index: 1;
+	position: absolute;
+	top: 870px;
+	left: 120px;
 }
 
 /* --- spin animation --- */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

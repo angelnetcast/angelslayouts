@@ -32,7 +32,7 @@ body {
 #header {
 	display: flex;
 	align-items: flex-end;
-	background-image: url(/assets/windowyui.jpg);
+	background-image: url(/assets/wndowyui.jpg);
 	background-repeat: no-repeat;
 	height: 380px;
 	color: white;
@@ -42,9 +42,9 @@ body {
 }
 
 #sidebar > ul {
-	list-style-type: none; /* Remove bullets */
-	padding: 0; /* Remove padding */
-	margin: 0; /* Remove margins */
+	list-style-type: none; /* remove bullets */
+	padding: 0; /* remove padding */
+	margin: 0; /* remove margins */
 }
 
 #footer {
