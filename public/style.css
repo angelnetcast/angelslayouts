@@ -1,56 +1,148 @@
-body {
-	width: 800px;
-    font-family: helvetica;
+/* ---------------------------- index stylesheet ---------------------------- */
+
+/* -------------- colors -------------- */
+:root {
+  /* ----- purples ----- */
+  --blue: #618ba0;
+  --red: #c26368;
+  --darkblue: #293542;
+  --yellow: #e0c598;
+  --gray: #919ab0;
+  --white: #ffffff;
 }
+
+/* -------------- fonts -------------- */
+@font-face {
+  font-family: coolvetica;
+  src: url("/assets/coolvetica.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -------------- base document -------------- */
+html {
+  color: var(--darkblue);
+}
+
+body {
+  width: 800px;
+  font-family: helvetica;
+}
+
+/* -------------- emphasis -------------- */
+mark {
+  background-color: var(--yellow);
+  color: var(--darkblue);
+}
+
+b {
+  color: var(--blue);
+}
+
+em {
+  color: var(--red);
+}
+
+/* -------------- links -------------- */
+a {
+  text-decoration-style: dotted;
+}
+
+a:link {
+  color: var(--darkblue);
+}
+
+a:visited {
+  color: var(--gray);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+/* -------------- decoration -------------- */
+
+/* ----- highlighted text ----- */
+::selection {
+  color: var(--red);
+  background: var(--yellow);
+}
+
+/* ----- list bullets ----- */
+ul {
+  list-style-type: disc;
+}
+
+ul > ul {
+  list-style-type: circle;
+}
+
+/* ----- heading colors ----- */
+h1,
+h2,
+h3 {
+  font-family: coolvetica;
+}
+
+/* -------------- container -------------- */
 .grid-container {
-	display: grid;
-	grid-template-areas:
-		"top top top top"
-		"nav main main main"
-		"footer footer footer footer";
+  display: grid;
+  grid-template-areas:
+    "top top top top"
+    "nav main main main"
+    "footer footer footer footer";
 }
 .grid {
-	padding: 10px;
-	margin: 15px;
+  padding: 10px;
+  margin: 15px;
 }
 .g1 {
-	grid-area: top;
+  grid-area: top;
 }
 
 .g2 {
-	grid-area: nav;
+  grid-area: nav;
+  width: 110px;
 }
 
 .g3 {
-	grid-area: main;
+  grid-area: main;
 }
 
 .g4 {
-	grid-area: footer;
+  grid-area: footer;
 }
 
+/* -------------- design -------------- */
 #header {
-	display: flex;
-	align-items: flex-end;
-	background-image: url(/assets/wndowyui.jpg);
-	background-repeat: no-repeat;
-	height: 380px;
-	color: white;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(/assets/windowyui.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 380px;
+  color: var(--white);
 }
 #sitenav {
-	text-align: left;
+  text-align: left;
+  padding-top: 10px;
 }
 
 #sidebar > ul {
-	list-style-type: none; /* remove bullets */
-	padding: 0; /* remove padding */
-	margin: 0; /* remove margins */
+  list-style-type: none; /* remove bullets */
+  padding: 0; /* remove padding */
+  margin: 0; /* remove margins */
 }
 
 #footer {
-	text-align: right;
+  text-align: right;
 }
 
-.layout{
-padding-left: 10px;    border-left: 1px solid black;
+.layout {
+  padding-left: 10px;
+  border-left: 1px solid var(--gray);
+}
+
+.deco {
+  text-align: right;
 }

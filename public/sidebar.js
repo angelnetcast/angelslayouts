@@ -1,5 +1,5 @@
 const sitenav = ` 
-<a href="/index.html">home</a> - about site - tutorials				
+<a href="/index.html">home</a> | <a href="/pages/about.html">about the site</a>		
 `;
 
 document.getElementById("sitenav").innerHTML = sitenav;
@@ -16,7 +16,7 @@ const sidebar = `
 document.getElementById("sidebar").innerHTML = sidebar;
 
 const footer = ` 
-from <a href="https://angelnetcast.com">angel</a> with love				
+<p>from <a href="https://angelnetcast.com">angel</a> with love			
 `;
 
 document.getElementById("footer").innerHTML = footer;
