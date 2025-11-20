@@ -117,7 +117,7 @@ h3 {
 #header {
   display: flex;
   align-items: flex-end;
-  background-image: url(/assets/windowyui.png);
+  background-image: url(/assets/yui-window.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 380px;
@@ -140,7 +140,7 @@ h3 {
 
 .layout {
   padding-left: 10px;
-  border-left: 1px solid var(--gray);
+  border-left: dotted 3px var(--yellow);
 }
 
 .deco {
