@@ -9,7 +9,6 @@ const sidebar = `
 	<li><a href="/pages/themed.html">themed layouts</a></li>
 	<li><a href="/pages/replica.html">replica layouts</a></li>
 	<li><a href="/pages/snippets.html">snippets</a></li>
-	<li><a href="/pages/navbars.html">navbars</a></li>
 	<li><a href="/pages/grids.html">grids</a></li>
 </ul>				
 `;
