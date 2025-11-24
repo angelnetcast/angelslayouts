@@ -146,3 +146,24 @@ h3 {
 .deco {
   text-align: right;
 }
+
+.tag {
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.tag2 {
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.tag3 {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 7px;
+  padding: 3px;
+}
