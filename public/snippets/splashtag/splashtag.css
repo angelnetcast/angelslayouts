@@ -1,67 +1,60 @@
 /* MAIN */
-:root {
-	--background: #b3ad95;
-	--foreground: #faf8df;
-	--bottomshadow: #e5dac6;
-	--maintxt: #533e0f;
-	--alttxt: #9c8d70;
-}
 
 /* fonts from: https://github.com/North-West-Wind/splatoon3-fonts */
 @font-face {
-	font-family: bold;
-	src: url(/snippets/splashtag/BlitzBold.otf);
+  font-family: bold;
+  src: url(/snippets/splashtag/BlitzBold.otf);
 }
 @font-face {
-	font-family: normal;
-	src: url(/snippets/splashtag/BlitzMain.otf);
+  font-family: normal;
+  src: url(/snippets/splashtag/BlitzMain.otf);
 }
 
 .splashtag {
-	background-image: url(/snippets/splashtag/banner.png);
-	background-repeat: no-repeat; /* the standard size for a banner is 700x200. you can get all of the banners from inkipedia. provided you're using the correct size, everything should work automatically. */
-	width: 700px;
-	height: 200px;
-	color: white; /* change this according to what is listed in inkipedia as the text color for your banner */
+  background-image: url(/snippets/splashtag/banner.png);
+  background-repeat: no-repeat; /* the standard size for a banner is 700x200. you can get all of the banners from inkipedia. provided you're using the correct size, everything should work automatically. */
+  width: 700px;
+  height: 200px;
+  color: white; /* change this according to what is listed in inkipedia as the text color for your banner */
 }
 
-.contents{
-    width: 700px;
-    height: 200px;
+.contents {
+  width: 700px;
+  height: 200px;
 }
 
 .title {
-	font-family: normal;
-	letter-spacing: 0.7px;
-	position: relative;
-	left: 10px;
+  font-family: normal;
+  letter-spacing: 0.7px;
+  position: relative;
+  left: 10px;
 }
 .name {
-	font-family: bold;
-	font-size: 30px;
-	text-align: center;
-    position: relative;
-	top: -10px;
+  font-family: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: -10px;
 }
 
 h1 {
-	margin-top: -20px;
+  margin-top: -20px;
 }
 .id {
-	font-family: normal;
-	letter-spacing: 0.7px;
-	position: relative;
-	left: 15px;
-	top: -50px;
+  font-family: normal;
+  letter-spacing: 0.7px;
+  position: relative;
+  left: 15px;
+  top: -50px;
 }
 
 .badges {
-	text-align: right;
-	position: relative;
-	top: -130px;
-	right: 15px;
+  text-align: right;
+  position: relative;
+  top: -130px;
+  right: 15px;
 }
 
 .badges > img {
-	width: 50px;
+  width: 50px;
 }
